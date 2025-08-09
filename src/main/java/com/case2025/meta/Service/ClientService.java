@@ -39,6 +39,7 @@ public class ClientService {
                 .map(client -> new ClientResponseDTO(client.getId(), client.getName(), client.getAge(),
                         client.getEmail()))
                 .collect(Collectors.toList());
+
     }
 
     public ClientResponseDTO update(long id, ClientRequestDTO dto) {
